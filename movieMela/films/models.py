@@ -1,4 +1,5 @@
 from django.db import models
+from django.conf import settings
 
 class Films(models.Model):
     created = models.DateField(auto_now_add=True)
@@ -13,6 +14,7 @@ class Films(models.Model):
         ordering = ['created']
 
     def __str__(self):
-        return self.name   
+        return self.name 
+
 
  
